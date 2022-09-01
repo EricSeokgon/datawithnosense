@@ -27,4 +27,7 @@ print(df.head(5))
 # df 데이터 셋의 컬럼명 확인
 print(df.columns)
 
+#컬럼명 변경
+df.columns=['sl','sw','pl','pw','sp']
+print(df.head(5))
 
