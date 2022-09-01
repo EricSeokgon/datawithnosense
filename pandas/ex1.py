@@ -81,3 +81,7 @@ print(df_2)
 # df데이터 세싱서 s가 0인 대상의 sl, sw, s열만 추출해 df_3에 넣음
 df_3 = df.loc[df.s == 0, ['sl', 'sw', 's']]
 print(df_3)
+
+# df데이터 셋에서 s열만 제외하고 추출해 df_4에 넣음
+df_4 = df[df.columns.difference(['s'])]
+print(df_4.head(5))
