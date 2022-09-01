@@ -34,3 +34,12 @@ print(df.head(5))
 # 5번쨰 컬럼명만 sp에서 s로 변경
 df.rename(columns={'sp':'s'}, inplace=True)
 print(df.head(5))
+
+# df 데이터 프레임의 데이터 확인
+print(df.values)
+
+# df 데이터 프레임의 열 인덱스 확인
+print(df.columns)
+
+# df 데이터 프레임의 행 인덱스 확인
+print(df.index)
