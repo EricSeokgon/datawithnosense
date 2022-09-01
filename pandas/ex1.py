@@ -43,3 +43,24 @@ print(df.columns)
 
 # df 데이터 프레임의 행 인덱스 확인
 print(df.index)
+
+# df 데이터 프레임에서 0~3번째 행의 데이터만 불러오기
+print(df[0:4])
+
+# df 데이터 프레임에서 3번째 행의 데이터만 불러오기
+print(df[3:4])
+
+# df 데이터 프레임에서 sl열의 데이터만 불러오기
+print(df['sl'])
+
+# df 데이터 프레임에서 sl,pl,s열의 데이터만 불러오기
+print(df[['sl','pl','s']])
+
+# 3번째 행까지 sl, s열의 데이터만 불러오기
+print(df[0:4][['sl','s']])
+
+# 3번째 행까지 sl, s열의 데이터만 불러오기
+print(df.loc[0:3,('sl','s')])
+
+# 3번째 행까지 sl, s열의 데이터만 불러오기
+print(df.iloc[0:4,[0,4]])
