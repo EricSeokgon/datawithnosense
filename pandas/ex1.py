@@ -31,3 +31,6 @@ print(df.columns)
 df.columns=['sl','sw','pl','pw','sp']
 print(df.head(5))
 
+# 5번쨰 컬럼명만 sp에서 s로 변경
+df.rename(columns={'sp':'s'}, inplace=True)
+print(df.head(5))
